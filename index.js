@@ -9,21 +9,23 @@ import webp from 'imagemin-webp'
 		plugins: [
 			webp(
 				{
-					quality: 82
+					quality: 80
 				}
 			)
 		]
 	})
+
 	await imagemin(['input/jpg/*.jpg'], {
 		destination: 'output/jpg',
 		plugins: [
 			mozjpeg(
 				{
-					quality: 82
+					quality: 80
 				}
 			)
 		]
 	})
+
 	await imagemin(['input/png/*.png'], {
 		destination: 'output/png',
 		plugins: [
