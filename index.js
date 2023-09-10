@@ -4,32 +4,22 @@ import pngquant from 'imagemin-pngquant'
 import webp from 'imagemin-webp'
 
 (async () => {
-	await imagemin(['input/png/*.png'], {
-		destination: 'output/webp',
-		plugins: [
-			webp(
-				{
-					quality: 80
-				}
-			)
-		]
-	})
-
-	await imagemin(['input/jpg/*.jpg'], {
-		destination: 'output/jpg',
-		plugins: [
-			mozjpeg(
-				{
-					quality: 80
-				}
-			)
-		]
-	})
-
-	await imagemin(['input/png/*.png'], {
+	const pngOpt = {
 		destination: 'output/png',
-		plugins: [
-			pngquant()
-		]
-	})
+		plugins: [pngquant()]
+	}
+
+	const jpgOpt = {
+		destination: 'output/jpg',
+		plugins: [mozjpeg({quality: 80})]
+	}
+
+	const webpOpt = {
+		destination: 'output/webp',
+		plugins: [webp({quality: 80})]
+	}
+
+	await imagemin(['input/png/*.png'], pngOpt)
+	await imagemin(['input/jpg/*.jpg'], jpgOpt)
+	await imagemin(['input/png/*.png'], webpOpt)
 })()
