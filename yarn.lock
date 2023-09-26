@@ -89,7 +89,7 @@ array-union@^3.0.1:
   resolved "https://registry.yarnpkg.com/array-union/-/array-union-3.0.1.tgz#da52630d327f8b88cfbfb57728e2af5cd9b6b975"
   integrity sha512-1OvF9IbWwaeiM9VhzYXVQacMibxpXOMYVNIvMtKRyX9SImBXpKcFr8XvFDeEslCyuH/t6KRt7HEO94AlP8Iatw==
 
-avif@^0.4.2:
+avif@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/avif/-/avif-0.4.3.tgz#2dd29fcafa53bad7845399f701764143111e26af"
   integrity sha512-5f8YBMF3nQtgA1eTL7uQln4Io+4uP3w0rFFH/MmL1uiwCurtwIn1W9J4qy5y45MHUr8jkSRNzC5xtxaACqhWYw==

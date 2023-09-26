@@ -8,7 +8,7 @@
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webp": "^8.0.0",
-    "avif": "^0.4.2"
+    "avif": "^0.4.3"
   },
   "scripts": {
     "min": "npx avif --input='./input/png/*' --output='./output/avif/' --quality=78 --verbose && node index.js"
