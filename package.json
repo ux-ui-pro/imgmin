@@ -1,16 +1,13 @@
 {
+  "name": "imgmin",
   "version": "1.0.0",
   "author": "ux-ui.pro",
   "license": "MIT",
   "type": "module",
-  "dependencies": {
-    "imagemin": "^8.0.1",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-pngquant": "^9.0.2",
-    "imagemin-webp": "^8.0.0",
-    "avif": "^0.4.3"
-  },
   "scripts": {
-    "min": "npx avif --input='./input/png/*' --output='./output/avif/' --quality=78 --verbose && node index.js"
+    "min": "node index.js"
+  },
+  "dependencies": {
+    "sharp": "^0.33.2"
   }
 }
